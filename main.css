@@ -1,0 +1,77 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #526cd4;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-radius: 14px;
+    background: #2c45ad;
+    box-shadow:  -41px 41px 82px #23378a, 
+                 41px -41px 82px #3553d0;
+}
+.icon {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    transition: .2s all;
+
+}
+.icon:hover {
+    box-shadow: 0px 0px 5px #fff;
+
+}
+#pageTitle {
+    font-size: 3vw;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+body {
+    padding: 3%;
+    width: 50%;
+    margin: auto;
+}
+h1 {
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p {
+    font-size: 1.5vw;
+}
+main {
+    text-align: center;
+    border-radius: 59px;
+    background: #526cd4;
+    box-shadow:  13px 13px 26px #4256aa, 
+                 -13px -13px 26px #6282fe;
+                 padding: 5%;
+}
+section {
+    padding: 2%;
+
+    margin: 5% auto 5% auto;
+    width: 90%;
+    border-radius: 32px;
+background: #526cd4;
+box-shadow: inset 14px 14px 28px #2f3e79, 
+            inset -14px -14px 28px #759aff;
+}
+#nook {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+}
