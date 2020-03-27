@@ -38,7 +38,6 @@ body {
 .grid__stats {
     grid-area: stats;
     width: 100%;
-    text-align: center;
 }
 
 .grid__links {
@@ -94,4 +93,10 @@ a img {
     background: none;
     color: #464646;
     box-shadow: 0 0 0 1px rgba(80, 80, 80, .5);
+}
+#stats__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
