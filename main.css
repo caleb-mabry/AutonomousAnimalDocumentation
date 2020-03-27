@@ -100,3 +100,52 @@ a img {
     display: block;
     margin: auto;
 }
+@media screen and (max-width: 700px) {
+    body {
+        grid-row-gap: 0;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas: 
+        "bot bot bot"
+        "info info info"
+        "stats stats stats"
+        "links links links";
+        text-align: center;
+    }
+    .grid__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: column-reverse;
+        grid-area: links;
+        width: 100%;
+    }
+    a {
+        margin: 1%;
+        width: 20%;
+    }
+    .btn {
+        width: 100%;
+        height: auto;
+    }
+
+.btn-4 {
+    background: #cbbcf6;
+    transition: all 0.16s ease-in;
+}
+
+.btn-4:hover {
+    background: none;
+    color: #464646;
+    box-shadow: 0 0 0 1px rgba(80, 80, 80, .5);
+}
+.grid__info {
+    padding: 0;
+}
+.grid__bot {
+    border-right: none;
+    margin: auto;
+    grid-area: bot;
+    width: 50%;
+}
+}
