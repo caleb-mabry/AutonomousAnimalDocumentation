@@ -112,6 +112,9 @@ footer {
     grid-area: footer;
     font-size: 1vw;
 }
+strong {
+    text-decoration: underline;
+}
 .btn-4:hover {
     background: none;
     color: #464646;
