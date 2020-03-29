@@ -10,10 +10,30 @@ body {
     margin: auto;
     grid-row-gap: 2%;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "bot info info" "stats stats stats" "links links links";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "bot info info"
+     "stats stats stats"
+     "code code code"
+    "links links links"
+    "footer footer footer";
+}
+.grid__code {
+    grid-area: code;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 
+
+.command code{
+color: lightgreen;
+}
+.command p {
+    display: inline;
+}
+footer {
+    text-align: center;
+}
 .grid__bot {
     border-right: 2px solid white;
     padding: 2%;
@@ -88,7 +108,10 @@ a img {
     background: #cbbcf6;
     transition: all 0.16s ease-in;
 }
-
+footer {
+    grid-area: footer;
+    font-size: 1vw;
+}
 .btn-4:hover {
     background: none;
     color: #464646;
@@ -103,12 +126,14 @@ a img {
 @media screen and (max-width: 700px) {
     body {
         grid-row-gap: 0;
-        grid-template-rows: 1fr auto auto auto;
+        grid-template-rows: 1fr auto auto auto auto;
         grid-template-areas: 
         "bot bot bot"
         "info info info"
         "stats stats stats"
-        "links links links";
+        "code code code"
+        "links links links"
+        "footer footer footer";
         text-align: center;
     }
     .grid__links {
@@ -126,7 +151,7 @@ a img {
     }
     .btn {
         width: 100%;
-        height: auto;
+        height: 30px;
     }
 
 .btn-4 {
