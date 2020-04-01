@@ -59,7 +59,16 @@ footer {
     grid-area: stats;
     width: 100%;
 }
-
+.wifi {
+    transition: 1s all;
+    width: 5%;
+    
+}
+.live__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .grid__links {
     display: flex;
     align-items: center;
